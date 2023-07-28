@@ -5,7 +5,7 @@ const beerDetails = document.querySelector('.beer-details');
 const reviewForm = document.getElementById('review-form');
 const reviewInput = document.getElementById('review');
 
-const apiUrl = 'http://localhost:3000'; // Base URL for the API
+const apiUrl = 'http://localhost:3000'; // variable name for base URL for the API
 
 // Function to render the beer menu in the <nav> element
 function renderBeerMenu(beers) {
@@ -61,7 +61,7 @@ reviewForm.addEventListener('submit', (e) => {
   const reviewText = reviewInput.value.trim();
 
   if (reviewText !== '') {
-    const selectedBeerId = getCurrentDisplayedBeerId(); // Implement this function to get the current displayed beer ID
+    const selectedBeerId = getCurrentDisplayedBeerId(); // function to get the current displayed beer ID
     if (selectedBeerId) {
       addReview(selectedBeerId, reviewText);
     }
