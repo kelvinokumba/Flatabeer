@@ -1,11 +1,11 @@
 // code here
-
 const beerMenu = document.getElementById('beer-list');
 const beerDetails = document.querySelector('.beer-details');
 const reviewForm = document.getElementById('review-form');
 const reviewInput = document.getElementById('review');
 
-const apiUrl = 'http://localhost:3000'; // variable name for base URL for the API
+// variable name for base URL for the API
+const apiUrl = 'http://localhost:3000';
 
 // Function to render the beer menu in the <nav> element
 function renderBeerMenu(beers) {
@@ -68,7 +68,6 @@ reviewForm.addEventListener('submit', (e) => {
     reviewInput.value = '';
   }
 });
-
 // Make a GET request to retrieve all the beers
 fetch(`${apiUrl}/beers`)
   .then((response) => response.json())
