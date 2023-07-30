@@ -1,4 +1,7 @@
 // code here
+
+
+//variables
 const beerMenu = document.getElementById('beer-list');
 const beerDetails = document.querySelector('.beer-details');
 const reviewForm = document.getElementById('review-form');
@@ -81,3 +84,4 @@ fetch(`${apiUrl}/beers`)
     }
   })
   .catch((error) => console.error('Error fetching beer data:', error));
+
